@@ -46,12 +46,12 @@ ax_nmean = plt.axes([0.25, 0.25, 0.65, 0.03])
 ax_ncov = plt.axes([0.25, 0.2, 0.65, 0.03])
 ax_fcut = plt.axes([0.25, 0.15, 0.65, 0.03])
 
-s_amp = Slider(ax_amp, 'Amplitude', 0.1, 5.0, valinit=init_amplitude)
-s_freq = Slider(ax_freq, 'Frequency', 1.0, 20.0, valinit=init_frequency)
-s_phase = Slider(ax_phase, 'Phase', 0.0, 2*np.pi, valinit=init_phase)
-s_nmean = Slider(ax_nmean, 'Noise Mean', -1.0, 1.0, valinit=init_noise_mean)
-s_ncov = Slider(ax_ncov, 'Noise Covariance', 0.001, 1.0, valinit=init_noise_cov)
-s_fcut = Slider(ax_fcut, 'Cutoff Frequency', 1.0, 50.0, valinit=init_filter_cutoff)
+s_amp = Slider(ax_amp, 'Амплітуда', 0.1, 5.0, valinit=init_amplitude)
+s_freq = Slider(ax_freq, 'Частота', 1.0, 20.0, valinit=init_frequency)
+s_phase = Slider(ax_phase, 'Фаза', 0.0, 2*np.pi, valinit=init_phase)
+s_nmean = Slider(ax_nmean, 'Середнє шуму', -1.0, 1.0, valinit=init_noise_mean)
+s_ncov = Slider(ax_ncov, 'Дисперсія шуму', 0.001, 1.0, valinit=init_noise_cov)
+s_fcut = Slider(ax_fcut, 'Частота зрізу', 1.0, 50.0, valinit=init_filter_cutoff)
 
 
 ax_check = plt.axes([0.025, 0.6, 0.15, 0.15])
